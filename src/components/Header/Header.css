@@ -4,5 +4,6 @@
 .header-button{
     background-color: #41d3bd;
     color: white;
+    border: none;
     border-radius: 10px;
 }
