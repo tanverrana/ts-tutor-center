@@ -1,3 +1,8 @@
 .navbar-container{
     background-color: #614ff9;
 }
+.header-button{
+    background-color: #41d3bd;
+    color: white;
+    border-radius: 10px;
+}
