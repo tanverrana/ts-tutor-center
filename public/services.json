@@ -3,7 +3,7 @@
         "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
         "name": "Science Tutoring",
         "img": "https://images1.whatuni.com/commimg/myhotcourses/blog/post/myhc_78987.jpg",
-        "service": "I offer individual complete All Science Subject  with Eight separate sessions.",
+        "details": "I offer individual complete All Science Subject  with Eight separate sessions.",
         "ratings": 4,
         "price": 75
     },
@@ -11,7 +11,7 @@
         "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
         "name": "SAT Preparation Test",
         "img": "https://www.akvtutorials.com/wp-content/uploads/2021/12/SAT-Reading-Comprehension-Practice-Test-47-Answers-SAT-Prep-Online-Tutor-Classes-AMBiPi.jpg",
-        "service": "I offer individual complete SAT guideline with four separate sessions.",
+        "details": "I offer individual complete SAT guideline with four separate sessions.",
         "ratings": 4.4,
         "price": 65
     },
@@ -19,7 +19,7 @@
         "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
         "name": "ACT Preparation Test",
         "img": "https://kckpl.librarymarket.com/sites/default/files/content/events/images/act-testing_0.jpg",
-        "service": "I offer individual complete ACT guideline with four separate sessions.",
+        "details": "I offer individual complete ACT guideline with four separate sessions.",
         "ratings": 5,
         "price": 50
     }

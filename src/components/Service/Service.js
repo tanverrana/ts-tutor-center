@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Service = () => {
+const Service = ({ service }) => {
+    const { name, img, price, ratings, details } = service;
     return (
         <div>
-            <h2>This is service.</h2>
+            <img src={img} alt="" />
+            <h2>{name}</h2>
+            <h5>Price:{price}</h5>
+            <p>{details}</p>
         </div>
     );
 };
