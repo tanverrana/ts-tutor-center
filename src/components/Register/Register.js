@@ -1,7 +1,9 @@
 import React from 'react';
+import { Spinner } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import "./Register.css";
 
@@ -11,7 +13,7 @@ const Register = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const navigate = useNavigate();
 
     const navigateLogin = () => {
@@ -20,6 +22,9 @@ const Register = () => {
 
     if (user) {
         navigate("/home");
+    }
+    if (loading) {
+        return <Loading></Loading>;
     }
 
     const handleRegister = event => {

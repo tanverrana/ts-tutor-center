@@ -4,6 +4,7 @@ import { Button, Form, Spinner } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
@@ -33,7 +34,7 @@ const Login = () => {
 
     }
     if (loading) {
-        return <Spinner className="align-item-center" animation="border" variant="info" />;
+        return <Loading></Loading>;
     }
 
     const handleSubmit = event => {
