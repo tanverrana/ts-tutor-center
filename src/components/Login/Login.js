@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRef } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, Spinner } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
@@ -19,9 +19,19 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-
+    let errorElement;
     if (user) {
         navigate(from, { replace: true });
+    }
+
+    if (error) {
+        errorElement = <div>
+            <p className="text-danger">Error: {error.message}</p>
+        </div>
+
+    }
+    if (loading) {
+        return <Spinner className="align-item-center" animation="border" variant="info" />;
     }
 
     const handleSubmit = event => {
@@ -53,11 +63,13 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
-                <Button className="btn header-button" type="submit">
-                    Submit
+                <Button className="btn header-button w-50 mx-auto d-block" type="submit">
+                    Login
                 </Button>
             </Form>
+            {errorElement}
             <p>New to TS Tutor Center? <Link className="text-danger text-decoration-none" to="/register" onClick={navigateRegister}>Please Register</Link></p>
+
             <SocialLogin></SocialLogin>
         </div>
     );
