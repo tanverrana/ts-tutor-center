@@ -34,7 +34,7 @@ const Blog = () => {
             <div className="my-4">
                 <h3> Why are you using firebase? What other options do you have to implement authentication?</h3>
                 <div>
-                    <p>I can use Firebase Authentication to allow users to sign in to our app using one or more sign-in methods, including email address and password sign-in, and federated identity providers such as Google Sign-in , Facebook Login, Git Hub logins and any others social media .So I can use Firebase.And Other option is React Hook that i can use React Hook.</p>
+                    <p>I can use Firebase Authentication to allow users to sign in to our app using one or more sign-in methods, including email address and password sign-in, and federated identity providers such as Google Sign-in , Facebook Login, Git Hub logins and any others social media .So I can use Firebase.And Other option is  Microservices.</p>
                 </div>
             </div>
             <div>
