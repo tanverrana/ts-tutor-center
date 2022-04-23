@@ -3,9 +3,9 @@ import picture from "../../images/tanver.png"
 
 const About = () => {
     return (
-        <div className="container d-flex justify-content-center align-items-center">
+        <div className="container  w-75 d-flex justify-content-center align-items-center">
             <div>
-                <img src={picture} alt="" />
+                <img src={picture} height="400px" alt="" />
                 <h3>Md. Tanver Rana Sobur</h3>
             </div>
             <div className="mx-5">
